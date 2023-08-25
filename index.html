@@ -4,32 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Montserrat:ital@1&family=Raleway:ital@1&display=swap" rel="stylesheet">
-    
+    <meta name="keywords" content="quiz, knowledge, general knowledge, test, everything">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Space test</title>
+    <title>Space Test</title>
 </head>
 <body>
-    <nav>
-        <a>Space Test</a>
-    </nav>
+    <h1 class="header">As close as you can observe, as far as you can't see.</h1>
+    <!-- Display the number of the current question and the score -->
+    <div class="container">
+        <div id="intro">
+            <div class="counter">
+                <p class="prefix">Question:</p>
+                <h1 id="counter">1/10</h1>
+            </div>
+            <div class="score">
+                <p class="prefix">Score:</p>
+                <h1 id="score">10</h1>
+            </div>
+        </div>
+        <!-- test/question-area -->
+        <div class="question-holder row">
+            <div class="col-12">
+                <h1 id="question">Question?</h1>
+            </div>
+        </div>
+        <!-- answer-area -->
+        <div class="row">
+            <div class="col-12">
+                <div class="answer-container">
+                    <p class="answer-prefix">A</p>
+                    <p class="answer-text" data-answer="a">Answer A</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="answer-container">
+                    <p class="answer-prefix">B</p>
+                    <p class="answer-text" data-answer="b">Answer B</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="answer-container">
+                    <p class="answer-prefix">C</p>
+                    <p class="answer-text" data-answer="c">Answer C</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="answer-container">
+                    <p class="answer-prefix">D</p>
+                    <p class="answer-text" data-answer="d">Answer D</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1 class="heading">As close as you can observe, as far as you can't see.</h1>
-    
-    <div class="test-area"></div>
-
-    <div class="question-area"></div>
-
-    <div class="answer-area"></div>
-
-    <div class="score-area"></div>
-
-    <div class="footer"></div>
-
+    <!-- footer -->
     <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
