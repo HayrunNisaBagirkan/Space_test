@@ -48,11 +48,54 @@ h1 {
 
 h2{
     padding: 1rem;
-    text-align: center;
     margin: 0;
+    text-align: center;
+
 }
 
 ul{
     list-style-type: none;
     padding: 0;
+}
+
+ul li {
+    font-size: 1 rem;
+    margin: 1 rem 0;
+    margin-bottom: 10px;
+}
+
+ul li label {
+    cursor:pointer
+}
+
+button {
+    color: white;
+    border: solid;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 1.2 rem;
+    font-size: 1 rem;
+    font-family: inherit;
+    display: block;
+
+}
+
+button:hover {
+    cursor: pointer;
+    border: outset;
+    margin: 1rem;
+}
+
+.answer {
+    height: 5rem;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    align-items: center;
+    padding: 1.2 rem;
+    font-size: 1 rem;
+    font-family: inherit;
+    cursor: pointer;
 }
