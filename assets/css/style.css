@@ -34,7 +34,7 @@ h1 {
 }
 
 
-.question-holder {
+.test-container {
     height: 5rem;
     margin: 1rem;
     margin-bottom: 0.5rem;
@@ -42,36 +42,17 @@ h1 {
     align-items: center;
 }
 
-
-.answer-container {
-    display: flex;
-    flex-direction: initial;
-    margin: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
+.test-header{
+    padding: 4rem;
 }
 
-
-.answer-prefix {
-    color: white;
-    background-color: #f7c4c4;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    text-align: center;
-}
-
-
-.answer-text {
-    width: 100%;
+h2{
     padding: 1rem;
-    margin: 1rem;
     text-align: center;
+    margin: 0;
 }
 
-
-.answer-container:hover {
-    cursor: pointer;
-    border: outset;
-    margin: 1rem;
+ul{
+    list-style-type: none;
+    padding: 0;
 }
