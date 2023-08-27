@@ -2,104 +2,98 @@ body,
 h1 {
     font-weight: 300;
     background-color: rgb(221, 228, 240);
-    margin: 1rem;
-
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
 }
 
 .header {
     text-align: center;
     border: double;
+    padding: 10px;
 }
 
 #intro {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem;
 }
-
 
 .prefix {
     text-align: center;
     font-size: 1rem;
-    margin: 1rem;
-    border: inset;
+    margin: 0;
+    border: 1px inset;
+    background-color: white;
 }
-
 
 #counter,
 #score {
     text-align: center;
-    margin: 1rem;
-    border: outset;
+    margin: 0;
+    padding: 5px;
+    border: 1px outset;
+    background-color: white;
 }
 
-
-.test-container {
-    height: 5rem;
-    margin: 1rem;
-    margin-bottom: 0.5rem;
+.test-header {
+    padding: 3rem;
     text-align: center;
-    align-items: center;
 }
 
-.test-header{
-    padding: 4rem;
-}
-
-h2{
+h2 {
     padding: 1rem;
     margin: 0;
-    text-align: center;
-
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    font-size: 1 rem;
-    margin: 1 rem 0;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 ul li label {
-    cursor:pointer
+    cursor: pointer;
+    padding: 10px;
+    border: 1px double #ccc;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
-button {
-    color: white;
-    border: solid;
-    border-radius: 5px;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.answer-button {
     width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(199, 231, 235);
+    border: none;
     cursor: pointer;
-    margin-bottom: 10px;
-    padding: 1.2 rem;
-    font-size: 1 rem;
-    font-family: inherit;
-    display: block;
-
+    transition: background-color 0.2s ease-in-out;
+    flex: 2;
 }
 
-button:hover {
-    cursor: pointer;
-    border: outset;
-    margin: 1rem;
+.answer-button:hover {
+    background-color: aliceblue;
 }
 
 button:focus {
     outline: none;
-}
-
-.answer {
-    height: 5rem;
-    margin: 1rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    align-items: center;
-    padding: 1.2 rem;
-    font-size: 1 rem;
-    font-family: inherit;
-    cursor: pointer;
 }
