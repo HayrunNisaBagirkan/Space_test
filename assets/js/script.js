@@ -1,4 +1,4 @@
-let questions = [
+const testData = [
 {
     id: 1,
     question: "What is the closest planet to the Sun ?",
@@ -101,17 +101,64 @@ let questions = [
     }
 ];
 
-const question = document.getElementById("question");
-const answers = Array.from(document.getElementsByClassName("answer-text"));
+
 const questionCounterText = document.getElementById("counter");
 const scoreText = document.getElementById("score");
 const restart = document.getElementById("restart")
-
-let questionCounter;
-let score;
 
 startGame = () => {
 questionCounter = 0;
 score = 0;
 scoreText.innerText = score;
 }
+
+const test = document.getElementById("test");
+const answerElements = document.querySelectorAll(".answer");
+const questionElements = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitButton = document.getElementById("submit");
+
+let currentTest = 0;
+let score = 0;
+
+const deselectAnswers = () => {
+    answerElements.forEach((answers) => (answer.checked = false));
+};
+
+const getSelected = () => {
+    let answer;
+    answerElements.forEach((answerElements) => {
+        if (answerElements.checked) answer = answerElemets.id;
+    });
+    return answer;
+};
+
+const loadTest = () => {
+    deselectAnswers();
+    const currentTestData = testData[currentTest];
+    questionElements.innerText = currentTestData.question;
+    a_text.innerText = currentTestData.a;
+    b_text.innerText = currentTestData.b;
+    c_text.innerText = currentTestData.c;
+    d_text.innerText = currentTestData.d;
+};
+
+loadTest();
+
+submitButton.addEventListener("click", () => {
+    const answer = getSelected();
+    if (answer) {
+    if (answer === testData[currentTest].correct) score++;
+    currentTest++;
+    if (currentTest < testData.length) loadTest();
+    else {
+        test.innerHTML = `
+        <h2>Congratulations you answered ${score} of the ${testData.length} questions correctly.</h2>
+            <button onclick="history.go(0)">Start Again</button>
+            `
+        }
+    }
+});

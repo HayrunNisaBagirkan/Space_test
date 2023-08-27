@@ -88,6 +88,10 @@ button:hover {
     margin: 1rem;
 }
 
+button:focus {
+    outline: none;
+}
+
 .answer {
     height: 5rem;
     margin: 1rem;
