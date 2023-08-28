@@ -30,14 +30,15 @@
       </div>
     </div>
 
-    <div class="test-header">
+<div id="question-container">    
+    <div id="test" class="test-header">
       <div class="button-container">
         <h2 id="question">Write the question here...</h2>
         <ul>
           <li>
             <label for="a">
               <input type="radio" name="answer" id="a" class="answer" />
-              <button class="answer-button" onclick="selectAnswer('a')">
+              <button id="a_button" class="answer-button" onclick="selectAnswer('a')">
                 Answer a...
               </button>
             </label>
@@ -45,7 +46,7 @@
           <li>
             <label for="b">
               <input type="radio" name="answer" id="b" class="answer" />
-              <button class="answer-button" onclick="selectAnswer('b')">
+              <button id="b_button" class="answer-button" onclick="selectAnswer('b')">
                 Answer b...
               </button>
             </label>
@@ -53,7 +54,7 @@
           <li>
             <label for="c">
               <input type="radio" name="answer" id="c" class="answer" />
-              <button class="answer-button" onclick="selectAnswer('c')">
+              <button id="c_button" class="answer-button" onclick="selectAnswer('c')">
                 Answer c...
               </button>
             </label>
@@ -61,7 +62,7 @@
           <li>
             <label for="d">
               <input type="radio" name="answer" id="d" class="answer" />
-              <button class="answer-button" onclick="selectAnswer('d')">
+              <button id="d_button" class="answer-button" onclick="selectAnswer('d')">
                 Answer d...
               </button>
             </label>
@@ -72,7 +73,18 @@
         </div>
       </div>
     </div>
-
+</div>
+    <div id="result" class="result-container">
+      <h2>
+        Congratulations! You answered <span id="score-result">0</span> of the 10
+        question correctly.
+      </h2>
+    <div id="start-again-container">
+      <button id="start-again-btn" onclick="location.reload()">
+        Start Again
+      </button>
+    </div>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
