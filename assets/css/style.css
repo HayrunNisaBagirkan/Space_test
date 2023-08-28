@@ -1,3 +1,4 @@
+/* Apply styles to the entire body and h1 elements */
 body,
 h1 {
   font-weight: 300;
@@ -6,20 +7,20 @@ h1 {
   padding: 0;
   font-family: inherit;
 }
-
+/* Style for the main header of the test */
 .header {
   text-align: center;
   border: double;
   padding: 10px;
 }
-
+/* Style for the introductory section */
 #intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
 }
-
+/* Style for the "Question" and "Score" prefixes */
 .prefix {
   text-align: center;
   font-size: 1rem;
@@ -27,7 +28,7 @@ h1 {
   border: 1px inset purple;
   background-color: aliceblue;
 }
-
+/* Style for the question counter and score display */
 #counter,
 #score {
   text-align: center;
@@ -36,22 +37,17 @@ h1 {
   border: 1px outset purple;
   background-color: aliceblue;
 }
-
+/* Style for the test header section */
 .test-header {
   padding: 3rem;
   text-align: center;
 }
-
+/* Style for secondary level headings */
 h2 {
   padding: 1rem;
   margin: 0;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
+/* Style for list items in the unordered list */
 ul li {
   font-size: 1rem;
   margin: 10px 0;
@@ -59,6 +55,12 @@ ul li {
   align-items: center;
 }
 
+/* Style for unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* Style for the div containing answer choices */
 ul li div {
   cursor: pointer;
   padding: 10px;
@@ -68,14 +70,14 @@ ul li div {
   flex: 1;
   align-items: center;
 }
-
+/* Container style for the answer buttons */
 .button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
 }
-
+/* Style for the answer choice buttons */
 .answer-button {
   width: 100%;
   padding: 1rem;
@@ -89,15 +91,15 @@ ul li div {
   transition: background-color 0.2s ease-in-out;
   flex: 2;
 }
-
+/* Hover effect for answer choice buttons */
 .answer-button:hover {
   background-color: purple;
 }
-
+/* Remove focus outline from buttons */
 button:focus {
   outline: none;
 }
-
+/* Style for the container displaying test results */
 .result-container {
   display: none;
   padding: 20px;
@@ -106,19 +108,19 @@ button:focus {
   margin-top: 20px;
   text-align: center;
 }
-
+/* Style for the result container heading */
 .result-container h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-
+/* Style for the container of the "Start Again" button */
 #start-again-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-
+/* Style for the "Start Again" button */
 #start-again-btn {
   padding: 10px 20px;
   font-size: 1rem;
@@ -128,7 +130,7 @@ button:focus {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
-
+/* Hover effect for the "Start Again" button */
 #start-again-btn:hover {
   background-color: purple;
 }

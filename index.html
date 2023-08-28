@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="quiz, knowledge, test, space" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="quiz, knowledge, test, space">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Space Test</title>
   </head>
 
   <body>
+    <!--Main header of the test-->
     <h1 class="header">
       As close as you can observe, as far as you can't see.
     </h1>
     <!-- Display the number of the current question and the score -->
     <div class="container">
       <div id="intro">
+        <!-- Container for question number -->
         <div class="counter">
           <p class="prefix">Question:</p>
           <h1 id="counter">1/10</h1>
         </div>
+        <!-- Container for current score -->
         <div class="score">
           <p class="prefix">Score:</p>
           <h1 id="score">10</h1>
         </div>
       </div>
     </div>
-
+    <!-- Container for displaying questions and answer choices -->
     <div id="question-container">
       <div id="test" class="test-header">
         <div class="button-container">
           <h2 id="question">Write the question here...</h2>
           <ul>
+            <!-- List of answer choices, Buttons and Radio buttons for selecting answers -->
             <li>
               <div>
                 <label for="a"></label>
-                <input type="radio" name="answer" id="a" class="answer" />
-                <button id="a_button" class="answer-button">Answer a...</button>
+                <input type="radio" name="answer" id="a" class="answer">
+                <button id="a-button" class="answer-button">Answer a...</button>
               </div>
             </li>
             <li>
               <div>
                 <label for="b"></label>
-                <input type="radio" name="answer" id="b" class="answer" />
-                <button id="b_button" class="answer-button">Answer b...</button>
+                <input type="radio" name="answer" id="b" class="answer">
+                <button id="b-button" class="answer-button">Answer b...</button>
               </div>
             </li>
             <li>
               <div>
                 <label for="c"></label>
-                <input type="radio" name="answer" id="c" class="answer" />
-                <button id="c_button" class="answer-button">Answer c...</button>
+                <input type="radio" name="answer" id="c" class="answer">
+                <button id="c-button" class="answer-button">Answer c...</button>
               </div>
             </li>
             <li>
               <div>
                 <label for="d"></label>
-                <input type="radio" name="answer" id="d" class="answer" />
-                <button id="d_button" class="answer-button">Answer d...</button>
+                <input type="radio" name="answer" id="d" class="answer">
+                <button id="d-button" class="answer-button">Answer d...</button>
               </div>
             </li>
           </ul>
+        <!-- Submit button to submit the chosen answer -->
           <div>
             <button id="submit">Submit</button>
           </div>
         </div>
       </div>
     </div>
+    <!-- Container for displaying the quiz result -->
     <div id="result" class="result-container">
+        <!-- Display the quiz score wita a message -->
       <h2>
         Congratulations! You answered <span id="score-result">0</span> of the 10
         question correctly.
       </h2>
+    <!-- Container for starting the quiz again and Button to reload the page -->
       <div id="start-again-container">
         <button id="start-again-btn" onclick="location.reload()">
           Start Again
         </button>
       </div>
     </div>
+    <!-- Include the JavaScript file for test functionality -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
