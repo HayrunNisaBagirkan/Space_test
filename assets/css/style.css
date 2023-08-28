@@ -1,134 +1,134 @@
 body,
 h1 {
-    font-weight: 300;
-    background-color: aliceblue;
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
+  font-weight: 300;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
 }
 
 .header {
-    text-align: center;
-    border: double;
-    padding: 10px;
+  text-align: center;
+  border: double;
+  padding: 10px;
 }
 
 #intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
 
 .prefix {
-    text-align: center;
-    font-size: 1rem;
-    margin: 0;
-    border: 1px inset purple;
-    background-color: aliceblue;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+  border: 1px inset purple;
+  background-color: aliceblue;
 }
 
 #counter,
 #score {
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-    border: 1px outset purple;
-    background-color: aliceblue;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  border: 1px outset purple;
+  background-color: aliceblue;
 }
 
 .test-header {
-    padding: 3rem;
-    text-align: center;
+  padding: 3rem;
+  text-align: center;
 }
 
 h2 {
-    padding: 1rem;
-    margin: 0;
+  padding: 1rem;
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    font-size: 1rem;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
-ul li label {
-    cursor: pointer;
-    padding: 10px;
-    border: 1px double purple;
-    background-color: aliceblue;
-    display: flex;
-    flex: 1;
-    align-items: center;
+ul li div {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px double purple;
+  background-color: aliceblue;
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .answer-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    margin-left: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: aliceblue;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    flex: 2;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: aliceblue;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  flex: 2;
 }
 
 .answer-button:hover {
-    background-color: purple;
+  background-color: purple;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .result-container {
-    display: none;
-    padding: 20px;
-    background-color: aliceblue;
-    border: 1px solid purple;
-    margin-top: 20px;
-    text-align: center;
+  display: none;
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid purple;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .result-container h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 #start-again-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 #start-again-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: aliceblue;
-    color: purple;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: purple;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #start-again-btn:hover {
-    background-color: purple;
+  background-color: purple;
 }
