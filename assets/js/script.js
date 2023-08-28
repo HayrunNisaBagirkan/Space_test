@@ -113,13 +113,6 @@ const scoreResult = document.getElementById("score-result");
 const resultContainer = document.getElementById("result");
 const startAgainButton = document.getElementById("start-again-btn");
 
-startGame = () => {
-    currentTest = 0;
-    score = 0;
-    scoreText.innerText = score;
-    loadTest();
-};
-
 const deselectAnswers = () => {
     answerElements.forEach((answer) => (answer.checked = false));
 };
