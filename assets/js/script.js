@@ -107,20 +107,6 @@ startGame = () => {
     scoreText.innerText = score;
 };
 
-const questionCounterText = document.getElementById("counter");
-const scoreText = document.getElementById("score");
-const test = document.getElementById("test");
-const questionElements = document.getElementById("question");
-const answerElements = document.querySelectorAll(".answer");
-const a_text = document.getElementById("a_text");
-const b_text = document.getElementById("b_text");
-const c_text = document.getElementById("c_text");
-const d_text = document.getElementById("d_text");
-const submitButton = document.getElementById("submit");
-
-let currentTest = 0;
-let score = 0;
-
 const deselectAnswers = () => {
     answerElements.forEach((answer) => (answer.checked = false));
 };
@@ -128,7 +114,7 @@ const deselectAnswers = () => {
 const getSelected = () => {
     let answer;
     answerElements.forEach((answerElements) => {
-        if (answerElements.checked) answer = answerElements.id;
+        if (answerElement.checked) answer = answerElement.id;
     });
     return answer;
 };
