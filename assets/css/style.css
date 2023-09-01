@@ -1,4 +1,9 @@
     /* Apply styles to the entire body and h1 elements */
+    body {
+        background-image: url(https://i.ibb.co/YNLwV5m/orion-nebulasi2.jpg);
+        background-size: cover;
+    }
+
     body,
     h1 {
         font-weight: 300;
@@ -6,7 +11,7 @@
         margin: 0;
         padding: 0;
         font-family: inherit;
-        color: darkblue;
+        color: black;
 
     }
 
@@ -14,9 +19,10 @@
     .header {
         text-align: center;
         border: double;
-        border-color: darkblue;
+        border-color: lightblue;
         padding: 5px;
-        margin: 5px
+        margin: 5px;
+        opacity: 0.4;
     }
 
     /* Style for the introductory section */
@@ -34,6 +40,7 @@
         margin-bottom: 5px;
         border: 1px inset darkblue;
         background-color: aliceblue;
+        opacity: 0.5;
     }
 
     /* Style for the question counter and score display */
@@ -44,6 +51,7 @@
         padding: 5px;
         border: 1px outset darkblue;
         background-color: aliceblue;
+        opacity: 0.5;
     }
 
     /* Style for the test header section */
@@ -56,6 +64,8 @@
     h2 {
         padding: 1rem;
         margin: 0;
+        color: whitesmoke;
+        text-decoration: underline;
     }
 
     /* Style for list items in the unordered list */
@@ -110,6 +120,7 @@
     /* Hover effect for answer choice buttons */
     .answer-button:hover {
         background-color: lightblue;
+        text-decoration: underline;
     }
 
     /* Remove focus outline from buttons */
