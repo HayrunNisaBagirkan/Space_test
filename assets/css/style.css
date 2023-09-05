@@ -117,6 +117,10 @@ ul li div {
     flex: 2;
 }
 
+label {
+    display: none;
+}
+
 /* Hover effect for answer choice buttons */
 .answer-button:hover {
     background-color: lightblue;
