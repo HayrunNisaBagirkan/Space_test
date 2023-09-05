@@ -116,7 +116,7 @@ ul li div {
     transition: background-color 0.2s ease-in-out;
     flex: 2;
 }
-
+/* Style for labels */
 label {
     display: none;
 }
