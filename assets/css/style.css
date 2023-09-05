@@ -1,183 +1,183 @@
-    body {
-        background-image: url(https://i.ibb.co/YNLwV5m/orion-nebulasi2.jpg);
-        background-size: cover;
-    }
+body {
+    background-image: url(https://i.ibb.co/YNLwV5m/orion-nebulasi2.jpg);
+    background-size: cover;
+}
 
-    /* Apply styles to the entire body and h1 elements */
-    body,
-    h1 {
-        font-weight: 300;
-        background-color: aliceblue;
-        margin: 0;
-        padding: 0;
-        font-family: inherit;
-        color: black;
+/* Apply styles to the entire body and h1 elements */
+body,
+h1 {
+    font-weight: 300;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    color: black;
 
-    }
+}
 
-    /* Style for the main header of the test */
-    .header {
-        text-align: center;
-        border: double;
-        border-color: aliceblue;
-        padding: 5px;
-        margin: 5px;
-        opacity: 0.4;
-    }
+/* Style for the main header of the test */
+.header {
+    text-align: center;
+    border: double;
+    border-color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    opacity: 0.4;
+}
 
-    /* Style for the intro section */
-    #intro {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1rem;
-    }
+/* Style for the intro section */
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
 
-    /* Style for the "Question" and "Score" prefixes */
-    .prefix {
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 5px;
-        border: 1px inset black;
-        background-color: aliceblue;
-        opacity: 0.5;
-    }
+/* Style for the "Question" and "Score" prefixes */
+.prefix {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    border: 1px inset black;
+    background-color: aliceblue;
+    opacity: 0.5;
+}
 
-    /* Style for the question counter and score display */
-    #counter,
-    #score {
-        text-align: center;
-        margin: 0;
-        padding: 5px;
-        border: 1px outset black;
-        background-color: aliceblue;
-        opacity: 0.5;
-    }
+/* Style for the question counter and score display */
+#counter,
+#score {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    border: 1px outset black;
+    background-color: aliceblue;
+    opacity: 0.5;
+}
 
-    /* Style for the test header section */
-    .test-header {
-        padding: 3rem;
-        text-align: center;
-    }
+/* Style for the test header section */
+.test-header {
+    padding: 3rem;
+    text-align: center;
+}
 
-    /* Style for secondary level headings in question section */
-    .question-container h2 {
-        padding: 1.5rem;
-        margin: 0;
-        color: black;
-        text-decoration: underline;
-    }
+/* Style for secondary level headings in question section */
+.question-container h2 {
+    padding: 1.5rem;
+    margin: 0;
+    color: black;
+    text-decoration: underline;
+}
 
-    /* Style for list items in the unordered list */
-    ul li {
-        font-size: 1rem;
-        margin: 10px 0;
-        display: flex;
-        align-items: center;
-    }
+/* Style for list items in the unordered list */
+ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
 
-    /* Style for unordered lists */
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
+/* Style for unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    /* Style for the div containing answer choices */
-    ul li div {
-        cursor: pointer;
-        padding: 10px;
-        border: 1px double black;
-        background-color: aliceblue;
-        display: flex;
-        flex: 1;
-        align-items: center;
-    }
+/* Style for the div containing answer choices */
+ul li div {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px double black;
+    background-color: aliceblue;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
 
-    /* Container style for the answer buttons */
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5px;
-    }
+/* Container style for the answer buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
 
-    /* Style for the answer choice buttons */
-    .answer-button {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-        color: black;
-        margin-left: 10px;
-        box-sizing: border-box;
-        text-align: center;
-        background-color: aliceblue;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-        flex: 2;
-    }
+/* Style for the answer choice buttons */
+.answer-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: black;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    flex: 2;
+}
 
-    /* Hover effect for answer choice buttons */
-    .answer-button:hover {
-        background-color: lightblue;
-        text-decoration: underline;
-    }
+/* Hover effect for answer choice buttons */
+.answer-button:hover {
+    background-color: lightblue;
+    text-decoration: underline;
+}
 
-    /* Remove focus outline from buttons */
-    button:focus {
-        outline: none;
-    }
+/* Remove focus outline from buttons */
+button:focus {
+    outline: none;
+}
 
-    #submit {
-        width: 100%;
-        padding: 10px 20px;
-        font-size: 1rem;
-        color: black;
-        margin: 0;
-        box-sizing: border-box;
-        text-align: center;
-        cursor: pointer;
-        border: 1px solid black;
-    }
+#submit {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
 
-    /* Style for the container displaying test results */
-    .result-container {
-        display: none;
-        padding: 20px;
-        background-color: aliceblue;
-        border: 1px solid black;
-        margin-top: 20px;
-        text-align: center;
-    }
+/* Style for the container displaying test results */
+.result-container {
+    display: none;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-top: 20px;
+    text-align: center;
+}
 
-    /* Style for the result container heading */
-    .result-container h2 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        color: black;
-        text-decoration: underline;
-    }
+/* Style for the result container heading */
+.result-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: underline;
+}
 
-    /* Style for the container of the "Start Again" button */
-    #start-again-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
+/* Style for the container of the "Start Again" button */
+#start-again-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
-    /* Style for the "Start Again" button */
-    #start-again-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-        background-color: aliceblue;
-        color: black;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-    }
+/* Style for the "Start Again" button */
+#start-again-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
 
-    /* Hover effect for the "Start Again" button */
-    #start-again-btn:hover {
-        background-color: lightblue;
-    }
+/* Hover effect for the "Start Again" button */
+#start-again-btn:hover {
+    background-color: lightblue;
+}

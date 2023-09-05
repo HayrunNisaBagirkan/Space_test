@@ -116,7 +116,10 @@ const scoreResult = document.getElementById("score-result");
 const resultContainer = document.getElementById("result");
 const startAgainButton = document.getElementById("start-again-btn");
 
-// Function to start the test
+/**
+ * Function to start the test
+ */
+
 startGame = () => {
   currentTest = 0;
   score = 0;
@@ -124,12 +127,16 @@ startGame = () => {
   loadTest();
 };
 
-// Function to deselect all answer choices
+/**
+ * Function to deselect all answer choices
+ */
 const deselectAnswers = () => {
   answerElements.forEach((answer) => (answer.checked = false));
 };
 
-// Function to get the selected answer
+/**
+ * Function to get the selected answer
+ */
 const getSelected = () => {
   let answer;
   answerElements.forEach((answerElement) => {
@@ -138,18 +145,24 @@ const getSelected = () => {
   return answer;
 };
 
-// Function to load and display the current test question
+/**
+ * Function to load and display the current test question
+ */
 const loadTest = () => {
   deselectAnswers();
   if (currentTest >= testData.length) {
-    // Display result when all questions are answered
+    /**
+     * Display result when all questions are answered
+     */
     resultContainer.style.display = "block";
     scoreResult.innerText = score;
     questionContainer.style.display = "none";
     submitButton.style.display = "none";
     startAgainButton.style.display = "block";
   } else {
-    // Load and display current question and answer choices
+    /**
+     * Load and display current question and answer choices
+     */
     const currentTestData = testData[currentTest];
     questionCounterText.innerText = `${currentTestData.id}/${testData.length}`;
     scoreText.innerText = score;
@@ -165,10 +178,14 @@ const loadTest = () => {
   }
 };
 
-// Initial loading of the first question
+/**
+ * Initial loading of the first question
+ */
 loadTest();
 
-// Event listener for submit button
+/**
+ * Event listener for submit button
+ */
 submitButton.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
@@ -176,7 +193,9 @@ submitButton.addEventListener("click", () => {
     currentTest++;
     if (currentTest < testData.length) loadTest();
     else {
-      // Display final result when all questions are answered
+      /**
+       * Display final result when all questions are answered
+       */
       resultContainer.style.display = "block";
       scoreResult.innerText = score;
       questionContainer.style.display = "none";
