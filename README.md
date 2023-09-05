@@ -3,7 +3,7 @@
 ### This website is a site designed for space lovers to test their knowledge of space and to support learning by repetition. While users are testing themselves, they also have the opportunity to increase their curiosity and knowledge by addressing the definitions related to space.
 
  
-![Am I Responsive](/assets/images/1.Am-I-Responsive.png)
+ ![Am I Responsive](/assets/images/1.Am-I-Responsive.png)
 
 ## Features
  
@@ -19,10 +19,9 @@
  
 -The page clearly shows the contents of the website. 
 
+## Header
  
 ![header](/assets/images/2.header.png)
-
-## Header
  
 -This site is planned to be made available to anyone interested in space.
  
@@ -32,59 +31,61 @@
 
 -It directs the user to the questions and keeps the excitement alive by showing the score simultaneously.
 
-![question and score](/assets/images/3.question-and-score.png)
-
 ## Question and Score Section
+
+![question and score](/assets/images/3.question-and-score.png)
 
 -Question and score counters are designed to provide the user with up-to-date information instantly. 
 
 -By placing it in the far right and left corners of the screen, it is aimed to give more space to the Orion Nebula view without attracting attention. 
 
-![question section](/assets/images/4.question-section.png)
-
 ## Question Section
+
+![question section](/assets/images/4.question-section.png)
  
 -As the text color of the question, black was preferred for compatibility with space.
  
 -Just as observing space requires attention, the questions were also planned to be carefully read and thought through.
 
-![answer and submit section](/assets/images/5.answer-and-submit-section.png)
-
 ## Answer and Submit Section
+
+![answer and submit section](/assets/images/5.answer-and-submit-section.png)
  
 -Placing the answers in a bright frame aimed to focus attention on the question and to see the answer clearly.
  
 -At the same time, it was aimed to encourage learning by making the concepts in the answer buttons not familiar to the user remarkable.
 
-![result and restart section](/assets/images/6.result-and-restart-section.png)
-
 ## Result and Restart Section
+
+![result and restart section](/assets/images/6.result-and-restart-section.png)
  
 -Here a warm farewell is planned by presenting the user with the score along with a congratulatory message.
  
 -Those who want to try again are given the opportunity to start again.
  
-![Validator Testing HTML](/assets/images/W3C-HTML-Validator.png)
-
 ## Validator Testing HTML 
+
+![Validator Testing HTML](/assets/images/W3C-HTML-Validator.png)
  
 No errors were returned when passing through the official W3C validator
- 
-![Validator Testing CSS](/assets/images/W3C-CSS-Validator-(Jigsaw).png)
 
 ## Validator Testing CSS
+
+![Validator Testing CSS](/assets/images/W3C-CSS-Validator-(Jigsaw).png)
  
 No errors were returned when passing through the official W3C validator
 
-![Validator Testing JS](/assets/images/JSHint-JavaScript-Validator.png)
- 
 ## JS Hint
- 
+
+![Validator Testing JS](/assets/images/JSHint-JavaScript-Validator.png)
+
+No errors in JS Hint
+
+## Accessibilty
+
 ![Lighthouse-desktop Accessibility](/assets/images/7.Lighthouse-desktop.png)
 
 ![Lighthouse-mobile Accessibility](/assets/images/8.Lighthouse-mobile.png)
-
-## Accessibilty
  
 I confirmed that the colors and fonts chosen are easy to read and accesible by running it through lighthouse in devtools
 
